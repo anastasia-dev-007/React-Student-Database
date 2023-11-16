@@ -7,12 +7,13 @@ import Edit from "./routes/Edit";
 
 function App() {
   return (
+    // Set up a React Router with different routes for Main, Details, and Edit components.
     <BrowserRouter>
-    <Routes>
-      <Route path = "/" element = {<Main/>}/>
-      <Route path = "/details/:id" element = {<Details/>}/>
-      <Route path = "/edit/:id" element = {<Edit/>}/>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Main />} /> 
+        <Route path="/details/:id" element={<Details />} />
+        <Route path="/edit/:id" element={<Edit />} />
+      </Routes>
     </BrowserRouter>
   );
 }

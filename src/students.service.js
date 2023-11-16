@@ -71,7 +71,7 @@ export const getStudentById = (id) => {
     return foundItem ? foundItem : defaultItem;
 }
 
-//cream o functie car eva adauga student in lista initiala, dar va si modifica studentul existent daca este cazul. Acum trebuie sa verificam daca studentul are id, atunci trebuie sa il gasim si sa rescriem proprietatile lui cu ccea ce primim aici, cee ace insemana ca el a fost modificat, iar daca id este null, atunci trebuie sa setam un nou atribut id si sa il adaugam in lista
+//cream o functie care va adauga student in lista initiala, dar va si modifica studentul existent daca este cazul. Acum trebuie sa verificam daca studentul are id, atunci trebuie sa il gasim si sa rescriem proprietatile lui cu ccea ce primim aici, cee ace insemana ca el a fost modificat, iar daca id este null, atunci trebuie sa setam un nou atribut id si sa il adaugam in lista
 export const saveStudent = (student) => {
     if (!student.id) {//daca nu avem asa student
         student.id = students.length + 1;
